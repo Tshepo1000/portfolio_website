@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./index.css" rel="stylesheet">
+        <script src="./index.js"></script>
+    </head>
+    <body class="contact-body" onload = "myMessage()">
+        <nav class="nav-bar">
+            <h1>Tshepo T Sekete</h1>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./about.html">About Me</a>
+            </div>
+        </nav>
+        <section class="contact">
+            <form action="/action_page.php" class="form" name="myForm" method="post" onsubmit="return contactVal()">
+                <label>Full Name</label><br>
+                <input class="fname" type="text" name="fname" placeholder="Name & Surname" onfocus = "focu(this)" onfocusout = "fout(this)" required><br><br>
+                <label>Email</label><br>
+                <input class="emailadd" type="text" name="email" placeholder="Email Address"  onfocus = "focu(this)"  onfocusout = "fout(this)" required><br><br>
+                <label>Subject</label><br>
+                <input type="text" name="name" placeholder="Email Subject"  onfocus = "focu(this)"  onfocusout = "fout(this)" required><br><br>
+                <label>Message</label><br>
+                <textarea rows="10" cols="40" placeholder="Enter your message"  onfocus = "focu(this)"  onfocusout = "fout(this)" required></textarea><br><br>
+                <input type="submit" name="submit" value="Send Message" class="sub"><br><br>
+                <input type="reset" name="clear" value="Clear" class="res">
+            </form>
+        </section>
+    </body>
+</html>

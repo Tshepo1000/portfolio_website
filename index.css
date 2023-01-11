@@ -1,0 +1,148 @@
+body{
+    background-color: #135C75;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2596be;
+    color: white;
+    padding: 2rem 4rem;
+}
+.nav-links > a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-links > a:hover{
+    color:blue;
+}
+.nav-links{
+    display: flex;
+    gap: 6rem;
+    cursor: pointer;
+}
+.index{
+    background-color:#135C75;;
+    min-height: 70vh;
+}
+.home-content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    color: white;
+}
+.home-content > img{
+    width: 400px;
+    height: 400px;
+}
+.home-desc{
+    width: 50%;
+}
+.home-desc > h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.name{
+    color: blue;
+}
+.home-desc > p{
+    width: 80%;
+    margin-bottom: 3rem;
+    line-height: 30px;
+}
+.home-desc > a > button{
+    background-color: rgb(0, 139, 116);
+    color: darkblue;
+    border-radius: 999px;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    padding: 1rem 4rem;
+}
+.home-desc > a > button:hover{
+    background-color: black;
+    color: white;
+}
+.contact{
+    padding: 3rem 32rem;
+    line-height: 20px;
+}
+.form{
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+}
+.form > input{
+    width:340px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+input[placeholder]{
+    text-align: left;
+    padding-left: 5px;
+}
+textarea{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 5px;
+}
+.sub{
+    background-color: #2596be;
+    border: 1px solid #2596be;
+    cursor: pointer;
+    color: white;
+}
+.res{
+    background-color: #2596be;
+    border: 1px solid #2596be;
+    cursor: pointer;
+    color: white;
+}
+.res:hover{
+    background-color: darkblue;
+    border: 1px solid darkblue;
+}
+.sub:hover{
+    background-color: darkblue;
+    border: 1px solid darkblue;
+}
+.contact-body{
+    background-color:#135C75;
+}
+.cv{
+    background-color: #135C75;
+    color: white;
+    padding: 2rem 5rem;
+}
+.cv > h2{
+    color: lightblue;
+    line-height: 50px;
+}
+.cv > h1{
+    color: lightblue;
+}
+.resTable, th, td{
+    border: 2px solid darkblue;
+    height: 30px;
+}
+.resTable{
+    width: 80%;
+    border-collapse: collapse;
+}
+#location{
+    padding-left: 80%;
+    color: white;
+}
+#loc{
+    padding-left: 80%;
+    color: white;
+}
