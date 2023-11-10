@@ -66,24 +66,99 @@ nav ul li a:hover
     transition: 0.2s;
 }
 
+.hide
+{
+    top: 70px;
+}
+
 nav button
 {
     width: 8rem;
     height: 2rem;
     border-radius: 1vh;
     cursor: pointer;
-    background-color: transparent;
+    background-color: lightblue;
+    color: white;
     margin-right: 10%;
     font-weight: bold;
-    border: 3px solid lightblue;
     letter-spacing: 2px;
+    border: none;
 }
 
 nav button:hover
 {
     border: none;
-    background-color: lightblue;
-    color: white;
+    background-color: transparent;
+    border: 3px solid lightblue;
+    color: black;
+}
+
+/* hamburger css start */
+@media screen and (max-width: 700px)
+{
+    .hamburger
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+        padding: 10px;
+        margin-right: -10px;
+    }   
+    
+    .lines
+    {
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: 35px;
+    }
+
+    .lines-rotate
+    {
+        background-color: blue;
+        border-radius: 5px;
+    }
+
+    nav
+    {
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    nav ul
+    {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -300px;
+        right: 0;
+        background-color: red;
+        padding: 35px 0;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px 5px 5px;
+
+    }
+
+    nav ul li a
+    {
+        color: black;
+    }
+
+    li
+    {
+        text-align: center;
+        width: 90vw;
+    }
+
+    nav ul li a:hover
+    {
+        font-weight: bold;
+        border: none;
+        letter-spacing: 2px;
+    }
 }
 
 /* navigation bar css end*/
