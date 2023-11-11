@@ -51,7 +51,7 @@ nav ul li a
     color: cadetblue;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: 0.5s;
+    transition-timing-function: ease-out;
     font-weight: bold;
 }
 
@@ -101,14 +101,29 @@ nav button:hover
         cursor: pointer;
         padding: 5px;
         margin-right: 35px;
+        transition: all 0.3s ease-in-out;
     }   
     
+    .hamburger.open span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+      }
+      
+      .hamburger.open span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.open span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -5px);
+      }
+
     .lines
     {
         display: block;
         height: 3px;
         width: 25px;
         background-color: black;
+        transition: all 0.3s ease-in-out;
+        transition-timing-function: ease-in;
     }
 
     .lines-rotate
@@ -135,7 +150,7 @@ nav button:hover
         background-color: white;
         padding: 35px 0;
         border-radius: 0 0 20px 20px;
-        /* box-shadow: 0px 5px 5px; */
+        transition-timing-function: ease-in-out;
     }
 
     nav ul li a
@@ -152,6 +167,7 @@ nav button:hover
         text-align: left;
         width: 90vw;
         margin-right: 15%;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     nav ul li a:hover
