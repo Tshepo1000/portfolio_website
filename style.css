@@ -236,6 +236,11 @@ article h1 span{
     right: 45px;
     cursor: pointer;
     font-size: 50px;
+    color: red;
+  }
+
+  #closeDiv:hover{
+    font-size: 60px;
   }
 
 form > input{

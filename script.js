@@ -71,7 +71,25 @@ function hideDiv(){
 
 //input fields on focus events
 var fname_input = document.getElementById("fname");
+var email_input = document.getElementById("email");
+var message_input = document.getElementById("message");
 function focusEvents(){
-  fname_input.style.border = "none";
-  fname_input.style.borderBottom = "2px solid black";
+  fname_input.style.outline = "none";
+  email_input.style.outline = "none";
+  message_input.style.outline = "none";
 }
+
+//clear button functions
+var clear_button = document.getElementById("clear-message");
+function clearEntries(){
+  fname_input.value = "";
+  email_input.value = "";
+  message_input.value = "";
+}
+
+clear_button.addEventListener("click", clearEntries);
+
+// Prevent the default button behavior of clear button
+clear_button.addEventListener("click", function(event) {
+  event.preventDefault(); 
+});
