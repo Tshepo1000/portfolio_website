@@ -13,7 +13,7 @@
         <nav>
             <h1>Mr Sekete</h1>
             <label>
-                <input type="checkbox">
+                <input type="checkbox" id="checkbox">
                 <span class="menu">
                     <span class="hamburger"></span>
                 </span>
@@ -25,23 +25,41 @@
                     <li><a href="#">Projects</a></li>
                 </ul>
 
-                <button class="sendMessBtn">
+                <button class="sendMessBtn" id="sendMessBtnid" onclick="showDiv()">
                     Message Me
                 </button>
             </label>
         </nav>
 
-        <section class="homeSection">
+        <section class="homeSection" id="homeSection">
             <div class="homeDiv">
                 <article>
                     <h1 id="greet"><span></span></h1>
                     <h1>I'm Tshepo <span>Sekete</span>,</h1>
                     <h2 style="font-weight: bold;">A <span id="text"></span></h2>
+                    <button id="hire_me"><a href="https://drive.google.com/file/d/1EwjJsbHDz4NTrwIYISwd6z53wbRwTgEc/view?usp=sharing">Resume</a></button>
+                    <button id="projects">Projects</button>
                 </article>
 
-                <img src="./images/Net-Development.webp" alt="coding animation" id="codingAnim">
+                <img src="./images/service-startup-mvp.png" alt="coding animation" id="codingAnim">
+            </div>          
+        </section>
+
+        <section class="aboutSection" style="background-color: black;">
+            <div class="aboutDiv">
             </div>
         </section>
+
+        <div class="messageDiv" id="messageDivID">
+            <form>
+                <span id="closeDiv" onclick="hideDiv()">&times;</span>
+                <input type="text" id="fname" name="fname" placeholder="Fullname" size="50" onfocus="focusEvents()"><br>
+                <input type="email" id="email" name="email" placeholder="Email" size="50"><br>
+                <input type="text" name="message" id="message" placeholder="Message" size="50"><br>
+                <button id="send-message">Send</button>
+                <button id="clear-message">Clear</button>
+            </form>
+        </div>
     </body>
 
 </html>
