@@ -45,17 +45,33 @@
             </div>          
         </section>
 
-        <section class="aboutSection" style="background-color: black;">
+        <section class="aboutSection">
+            <h1>About Me</h1>
             <div class="aboutDiv">
+                <div id="imageDiv">
+                    <img src="./images/service-startup-mvp.png" alt="Tshepo">
+                </div>
+                <div id="aboutMe">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse deserunt cupiditate nostrum inventore ex officia a praesentium soluta, fuga unde quia commodi culpa aliquid magni nulla consequuntur provident beatae nobis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit nam facere laborum odio suscipit at assumenda odit? Cupiditate eaque aliquam facilis possimus enim temporibus harum quisquam debitis non ipsam.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita, earum dicta recusandae dolore culpa sit consequatur nemo explicabo corporis. Voluptas inventore exercitationem qui nobis eveniet itaque quia libero doloremque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi ullam vero est quod. Impedit reprehenderit nam officiis a atque. Quod natus nemo facere omnis illum pariatur unde nam ducimus?
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque, ipsam praesentium aliquid aut eaque? Adipisci facere recusandae dolor perferendis fuga, illo totam maxime doloribus, voluptas quod vitae suscipit ipsum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt eos iste libero asperiores illum quibusdam ad fuga adipisci eligendi commodi consequatur obcaecati possimus, quos expedita in error, omnis est.
+                </div>
             </div>
         </section>
 
         <div class="messageDiv" id="messageDivID">
             <form>
                 <span id="closeDiv" onclick="hideDiv()">&times;</span>
-                <input type="text" id="fname" name="fname" placeholder="Fullname" size="50" onmouseenter="focusEvents()"><br>
-                <input type="email" id="email" name="email" placeholder="Email" size="50"><br>
-                <input type="text" name="message" id="message" placeholder="Message" size="50"><br>
+                <h1>Contact Me</h1>
+                <input type="text" id="fname" name="fname" placeholder="Fullname" size="40" onmouseenter="focusEvents()"><br>
+                <input type="email" id="email" name="email" placeholder="Email" size="40"><br>
+                <input type="text" id="subject" name="subject" placeholder="Subject" size="40">
+                <textarea rows="1" cols="34" name="message" id="message" placeholder="Message"></textarea>
                 <button id="send-message">Send</button>
                 <button id="clear-message">Clear</button>
             </form>

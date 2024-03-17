@@ -101,12 +101,15 @@ label .sendMessBtn:hover
     justify-content: space-evenly;
     align-items: center;
     padding: 40px;
+    position: relative;
+    flex-direction: row;
 }
 
 .homeSection
 {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    background-color: #f1f9fc;
 }
 
 article
@@ -136,7 +139,7 @@ article h1 span{
 
 #codingAnim
 {
-    height: 600px;
+    height: 650px;
     width: 600px;
 }
 
@@ -216,23 +219,23 @@ article h1 span{
 .messageDiv
 {
     display: none;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-left: 50px;
-    margin-top: -33%;
-    margin-left: 32%;
-    width: 35%;
-    height: 450px;
-    line-height: 100px;
+    width: 30%;
+    height: 430px;
+    line-height: 50px;
     box-shadow: 1px 1px 1px 1px white;
     z-index: 1;
-    position: relative;
-    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
 }
 
 #closeDiv {
     position: absolute;
-    top: -15px;
+    top: -5px;
     right: 45px;
     cursor: pointer;
     font-size: 50px;
@@ -243,20 +246,37 @@ article h1 span{
     font-size: 60px;
   }
 
-form > input{
-    border: none;
+form > #fname, #email, #subject{
+    border: 1px solid rgb(155, 127, 127);
+    border-radius: 5px;
     height: 40px;
     font-size: large;
-    border-bottom: 2px solid darkcyan;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    color: blue;
+    padding: 5px;
+    margin-bottom: 3%;
 }
+
+form h1{
+    padding-top: 35px;
+    text-align: justify;
+    color: #3f808d;
+}
+
+form > textarea{
+    border: 1px solid rgb(155, 127, 127);
+    border-radius: 5px;
+    height: 80px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+
+.messageDiv #messageDivID #message{overflow: auto;}
 
 #send-message{
     width: 120px;
     height: 40px;
-    margin-left: 18%;
+    margin-left: 10%;
     cursor: pointer;
     background-color: transparent;
     border: 1px solid #3f808d;
@@ -292,7 +312,7 @@ form > input{
 
 /* home section end */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 label .menu
 {
     position: absolute;
@@ -312,7 +332,7 @@ label .menu
 label .hamburger
 {
     position: absolute;
-    top: 125px;
+    top: 135px;
     left: 40px;
     width: 25px;
     height: 3px;
@@ -378,7 +398,7 @@ label #checkbox:checked + .menu .hamburger:after
     gap: 0;
     font-size: 20px;
     flex-direction: column;
-    top: 520%;
+    top: 370%;
     left: 30%;
     opacity: 0;
     -webkit-transition: .25s 0s ease-in-out;
@@ -413,4 +433,72 @@ label #checkbox:checked + .menu .hamburger:after
  nav h1{
     z-index: 250;
   }
+
+  body{width: 100vw;}
 } 
+
+@media only screen and (max-width: 768px)
+{
+    body{
+        overflow: hidden;
+        width: 100vw;
+    }
+    .homeSection{
+    
+    }
+
+    .homeSection .homeDiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeSection .homeDiv article{
+        position: absolute;
+        top: 95%;
+    }
+
+    article h1, h2
+    {
+        font-size: 30px;
+        line-height: 3.5rem;
+        text-align: center;
+    }
+
+    #text
+    {
+        font-size: 20px;
+    }
+
+    #codingAnim
+    {
+        height: 300px;
+        width: 300px;
+        margin-top: -5%;
+    }
+
+    #hire_me, #projects
+    {
+        letter-spacing: 1px;
+        width: 100px;
+        margin-left: 10%;
+    }
+}
+
+/*about section*/
+.aboutDiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    justify-content: space-evenly;
+}
+
+#imageDiv{
+    width: 600px;
+    height: 600px;
+}
+
+#aboutMe{
+    margin-top: 5%;
+    text-align: justify;
+    width: 600px;
+}

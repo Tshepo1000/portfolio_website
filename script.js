@@ -61,7 +61,7 @@ var h = document.getElementById("closeDiv");
 
 function hideDiv(){
   s.style.display = (s.style.display == 'block') ? 'none' : 'none';
-  sec.style.background = "white";
+  sec.style.background = "#f1f9fc";
   sec.style.opacity = "1";
   hire_me_button.style.pointerEvents = "auto";
   projects_button.style.pointerEvents = "auto";
@@ -73,10 +73,12 @@ function hideDiv(){
 var fname_input = document.getElementById("fname");
 var email_input = document.getElementById("email");
 var message_input = document.getElementById("message");
+var subject_input = document.getElementById("subject");
 function focusEvents(){
   fname_input.style.outline = "none";
   email_input.style.outline = "none";
   message_input.style.outline = "none";
+  subject_input.style.outline = "none";
 }
 
 //clear button functions
@@ -85,6 +87,7 @@ function clearEntries(){
   fname_input.value = "";
   email_input.value = "";
   message_input.value = "";
+  subject_input.value = "";
 }
 
 clear_button.addEventListener("click", clearEntries);
