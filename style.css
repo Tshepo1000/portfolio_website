@@ -5,6 +5,9 @@ html{
 {
     margin: 0;
     padding: 0;
+}
+
+body{
     overflow-x: hidden;
 }
 
@@ -62,11 +65,7 @@ nav h1
 label ul li a
 {
     text-decoration: none;
-    color: rgb(196, 59, 116);;
-}
-
-label ul li{
-    overflow: hidden;
+    color: rgb(14, 6, 122);;
 }
 
 label ul li a:hover
@@ -122,7 +121,7 @@ label .sendMessBtn:hover
 {
     height: 100vh;
     width: 100vw;
-    background-color: #f1f9fc;
+    background-color: #e5eeed;
 }
 
 article
@@ -336,7 +335,7 @@ form > textarea{
 label .menu
 {
     position: absolute;
-    right: -80px;
+    right: -70px;
     top: -100px;
     z-index: 100;
     width: 175px;
@@ -418,7 +417,7 @@ label #checkbox:checked + .menu .hamburger:after
     gap: 0;
     font-size: 20px;
     flex-direction: column;
-    top: 370%;
+    top: 150%;
     left: 30%;
     opacity: 0;
     -webkit-transition: .25s 0s ease-in-out;
@@ -460,8 +459,7 @@ label #checkbox:checked + .menu .hamburger:after
 @media only screen and (max-width: 768px)
 {
     body{
-        overflow: hidden;
-        width: 100vw;
+        overflow-x: hidden;
     }
     .homeSection{
     
@@ -513,7 +511,7 @@ label #checkbox:checked + .menu .hamburger:after
 .aboutSection #aboutMeHeader{
     font-size: 50px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 90px;
     font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-family: "Gill Sans", sans-serif;
@@ -534,7 +532,7 @@ label #checkbox:checked + .menu .hamburger:after
 }
 
 #imageDiv{
-    padding-top: 80px;
+    padding-top: 100px;
     width: 400px;
     height: 550px;
     overflow: hidden;
@@ -551,6 +549,8 @@ label #checkbox:checked + .menu .hamburger:after
     margin-top: 2%;
     text-align: justify;
     width: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
 }
 
 #myText{
@@ -564,3 +564,22 @@ label #checkbox:checked + .menu .hamburger:after
     content: '_'; /* Cursor */
     animation: blink 1s infinite;
 }
+/* about section end */
+
+/* services section */
+.services{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e5eeed;;
+}
+
+.services #myExpertise{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 90px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(89, 89, 182);
+}
+/* services section end */
