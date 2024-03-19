@@ -5,6 +5,7 @@ html{
 {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 *, *:before, *::after
@@ -20,18 +21,21 @@ html{
 nav
 {
     position: relative;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
     width: 100%;
     height: 70px;
-    box-shadow: 0px 2px whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 label ul
 {
     float: none;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: auto;
+    height: 50px;
     display: flex;
     list-style-type: none;
     flex-direction: row;
@@ -58,12 +62,18 @@ nav h1
 label ul li a
 {
     text-decoration: none;
+    color: rgb(196, 59, 116);;
+}
+
+label ul li{
+    overflow: hidden;
 }
 
 label ul li a:hover
 {
     text-decoration: none;
-    border-bottom: 3px solid #69d2e7;
+    border-bottom: 1px solid #0a7d94;
+    color: #12badb;
     transition: .3s;
 }
 
@@ -103,18 +113,21 @@ label .sendMessBtn:hover
     padding: 40px;
     position: relative;
     flex-direction: row;
+    padding-top: 60px;
+    height: 100%;
+    width: 100%;
 }
 
 .homeSection
 {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: #f1f9fc;
 }
 
 article
 {
-    margin-top: -5%;
+    margin-top: 2%;
 }
 
 article h1, h2
@@ -135,6 +148,7 @@ article h1 span{
     font-size: 38px;
     color: rgb(196, 59, 116);
     font-weight: lighter;
+
 }
 
 #codingAnim
@@ -231,15 +245,19 @@ article h1 span{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    position: fixed;
+    overflow: hidden;
 }
 
 #closeDiv {
     position: absolute;
-    top: -5px;
+    top: 0px;
     right: 45px;
     cursor: pointer;
     font-size: 50px;
     color: red;
+    font-weight: bolder;
+    overflow: hidden;
   }
 
   #closeDiv:hover{
@@ -251,13 +269,15 @@ form > #fname, #email, #subject{
     border-radius: 5px;
     height: 40px;
     font-size: large;
-    padding: 5px;
+    padding: 8px;
     margin-bottom: 3%;
+    font-family: "Gill Sans", sans-serif;
 }
 
 form h1{
-    padding-top: 35px;
+    padding-top: 40px;
     text-align: justify;
+    font-family: "Gill Sans", sans-serif;
     color: #3f808d;
 }
 
@@ -265,7 +285,7 @@ form > textarea{
     border: 1px solid rgb(155, 127, 127);
     border-radius: 5px;
     height: 80px;
-    padding: 5px;
+    padding: 8px;
     font-size: 20px;
 }
 
@@ -485,20 +505,62 @@ label #checkbox:checked + .menu .hamburger:after
 }
 
 /*about section*/
+.aboutSection{
+    height: 100vh;
+    width: 100vw;
+}
+
+.aboutSection #aboutMeHeader{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: "Gill Sans", sans-serif;
+}
+
+.aboutSection #myName{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
 .aboutDiv{
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
     justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
 }
 
 #imageDiv{
-    width: 600px;
-    height: 600px;
+    padding-top: 80px;
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+}
+
+#imageDiv img{
+    width: 90%;
+    height: 95%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #aboutMe{
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: justify;
-    width: 600px;
+    width: 500px;
+}
+
+#myText{
+    font-size: large;
+    color: #3f808d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#myText::after 
+{
+    content: '_'; /* Cursor */
+    animation: blink 1s infinite;
 }

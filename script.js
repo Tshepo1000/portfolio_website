@@ -42,6 +42,7 @@ type(); // Start typewriter effect
 
 //show message box on click
 var s = document.getElementById("messageDivID");
+var sec1 = document.getElementById("aboutSectionID");
 var sec = document.getElementById("homeSection");
 var hire_me_button = document.getElementById("hire_me");
 var projects_button = document.getElementById("projects");
@@ -49,7 +50,9 @@ var projects_button = document.getElementById("projects");
 function showDiv() {
   s.style.display = (s.style.display == 'none') ? 'block' : 'block';
   sec.style.background = "linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%)";
+  sec1.style.background = "linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%)";
   sec.style.opacity = "0.5";
+  sec1.style.opacity = "0.5";
   hire_me_button.style.pointerEvents = "none";
   projects_button.style.pointerEvents = "none";
   hire_me_button.style.cursor = "not-allowed";
@@ -62,7 +65,9 @@ var h = document.getElementById("closeDiv");
 function hideDiv(){
   s.style.display = (s.style.display == 'block') ? 'none' : 'none';
   sec.style.background = "#f1f9fc";
+  sec1.style.background = "white";
   sec.style.opacity = "1";
+  sec1.style.opacity = "1";
   hire_me_button.style.pointerEvents = "auto";
   projects_button.style.pointerEvents = "auto";
   hire_me_button.style.cursor = "pointer";
@@ -96,3 +101,33 @@ clear_button.addEventListener("click", clearEntries);
 clear_button.addEventListener("click", function(event) {
   event.preventDefault(); 
 });
+
+const textElement1 = document.getElementById("myText");
+const texts1 = ['Software Engineer', 'Web Developer', 'Full-Stack Developer', 'Cloud Admninistrator', 'Security Analyst']; // Array of texts
+let textIndex1 = 0; // Index of the current text
+let charIndex1 = 0; // Index of the current character
+
+function type1() {
+  const currentText1 = texts1[textIndex1];
+  if (charIndex1 < currentText1.length) {
+    textElement1.textContent += currentText1.charAt(charIndex1);
+    charIndex1++;
+    setTimeout(type1, 100); // Typing speed (milliseconds)
+  } else {
+    setTimeout(erase1, 1000); // Delay before erasing (milliseconds)
+  }
+}
+
+function erase1() {
+  if (charIndex1 > 0) {
+    const currentText1 = texts1[textIndex1];
+    textElement1.textContent = currentText1.substring(0, charIndex1 - 1);
+    charIndex1--;
+    setTimeout(erase1, 50); // Erasing speed (milliseconds)
+  } else {
+    textIndex1 = (textIndex1 + 1) % texts1.length; // Move to the next text
+    setTimeout(type1, 500); // Delay before typing next text (milliseconds)
+  }
+}
+
+type1(); // Start typewriter effect
