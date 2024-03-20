@@ -528,7 +528,8 @@ label #checkbox:checked + .menu .hamburger:after
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    margin: auto;
 }
 
 #imageDiv{
@@ -542,6 +543,7 @@ label #checkbox:checked + .menu .hamburger:after
     width: 90%;
     height: 95%;
     border-radius: 15px;
+    margin-left: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -570,16 +572,71 @@ label #checkbox:checked + .menu .hamburger:after
 .services{
     width: 100vw;
     height: 100vh;
-    background-color: #e5eeed;;
+    background-color: #e5eeed;
 }
 
 .services #myExpertise{
     font-size: 50px;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 80px;
     font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-family: "Gill Sans", sans-serif;
     color: rgb(89, 89, 182);
+    padding-bottom: 70px;
 }
+
+.expertise-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+
+.expertise-container #first-expertise, #second-expertise, #third-expertise{
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.expertise-container p{
+    margin:auto;
+    position: relative;
+    line-height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+.expertise-container i{
+    margin-top: 5%;
+    position: absolute;
+}
+.expertise-container i #css{
+    left: -10%;
+}
+
 /* services section end */
+
+/* skills section */
+.skills-section{
+    height: 100vh;
+    width: 100vw;
+}
+
+#skills-header{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(89, 89, 182);
+    margin-top: 5%;
+}
+
+/* skills section end */
