@@ -625,7 +625,7 @@ label #checkbox:checked + .menu .hamburger:after
 
 /* skills section */
 .skills-section{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
 }
 
@@ -638,5 +638,90 @@ label #checkbox:checked + .menu .hamburger:after
     color: rgb(89, 89, 182);
     margin-top: 5%;
 }
+
+.skills-container{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.first-row, .second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.first-row div{
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #caeff7;
+    position: relative;
+}
+
+.second-row div{
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #caeff7;
+    position: relative;
+}
+
+.second-row div:hover{
+    background-color: white;
+}
+
+.first-row div:hover{
+    background-color: white;
+}
+
+.first-row div img{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.second-row div img{
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-row div h3{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.second-row div h3{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+
 
 /* skills section end */
