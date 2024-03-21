@@ -44,19 +44,33 @@ type(); // Start typewriter effect
 var s = document.getElementById("messageDivID");
 var sec1 = document.getElementById("aboutSectionID");
 var sec = document.getElementById("homeSection");
+var sec2 = document.getElementById("servicesID");
+var sec3= document.getElementById("my-skillsID");
 var hire_me_button = document.getElementById("hire_me");
 var projects_button = document.getElementById("projects");
+
+var skillsContainerID = document.getElementById("skills-containerID");
 
 function showDiv() {
   s.style.display = (s.style.display == 'none') ? 'block' : 'block';
   sec.style.background = "linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%)";
   sec1.style.background = "linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%)";
+  sec2.style.background = "linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%)";
+  sec3.style.background = "linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%)";
+  
+  
+  sec2.style.opacity = "0.5";
   sec.style.opacity = "0.5";
   sec1.style.opacity = "0.5";
+  sec3.style.opacity = "0.5";
+
   hire_me_button.style.pointerEvents = "none";
   projects_button.style.pointerEvents = "none";
   hire_me_button.style.cursor = "not-allowed";
   projects_button.style.cursor = "not-allowed";
+
+  skillsContainerID.style.cursor = "not-allowed";
+  skillsContainerID.style.pointerEvents = "none";
 }
 
 //hide message box on click
@@ -64,14 +78,23 @@ var h = document.getElementById("closeDiv");
 
 function hideDiv(){
   s.style.display = (s.style.display == 'block') ? 'none' : 'none';
-  sec.style.background = "#f1f9fc";
+  sec.style.background = "#f8fafa";
   sec1.style.background = "white";
+  sec2.style.background = "#f8fafa";
+  sec3.style.background = "white";
+
   sec.style.opacity = "1";
   sec1.style.opacity = "1";
+  sec2.style.opacity = "1";
+  sec3.style.opacity = "1";
+
   hire_me_button.style.pointerEvents = "auto";
   projects_button.style.pointerEvents = "auto";
   hire_me_button.style.cursor = "pointer";
   projects_button.style.cursor = "pointer";
+
+  skillsContainerID.style.cursor = "auto";
+  skillsContainerID.style.pointerEvents = "auto";
 }
 
 //input fields on focus events

@@ -121,7 +121,7 @@ label .sendMessBtn:hover
 {
     height: 100vh;
     width: 100vw;
-    background-color: #e5eeed;
+    background-color: #f8fafa;
 }
 
 article
@@ -572,7 +572,7 @@ label #checkbox:checked + .menu .hamburger:after
 .services{
     width: 100vw;
     height: 100vh;
-    background-color: #e5eeed;
+    background-color: #f8fafa;
 }
 
 .services #myExpertise{
@@ -636,7 +636,7 @@ label #checkbox:checked + .menu .hamburger:after
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-family: "Gill Sans", sans-serif;
     color: rgb(89, 89, 182);
-    margin-top: 5%;
+    padding-top: 50px;
 }
 
 .skills-container{
@@ -660,7 +660,7 @@ label #checkbox:checked + .menu .hamburger:after
     height: 150px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: #caeff7;
+    background-color: #f3fcfc;;
     position: relative;
 }
 
@@ -670,7 +670,7 @@ label #checkbox:checked + .menu .hamburger:after
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin-top: 3%;
-    background-color: #caeff7;
+    background-color: #f3fcfc;
     position: relative;
 }
 
