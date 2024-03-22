@@ -625,7 +625,7 @@ label #checkbox:checked + .menu .hamburger:after
 
 /* skills section */
 .skills-section{
-    height: 80vh;
+    height: 95vh;
     width: 100vw;
 }
 
@@ -640,7 +640,7 @@ label #checkbox:checked + .menu .hamburger:after
 }
 
 .skills-container{
-    width: 65%;
+    width: 80%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -648,7 +648,7 @@ label #checkbox:checked + .menu .hamburger:after
     margin-top: 5%;
 }
 
-.first-row, .second-row{
+.first-row, .second-row, .third-row{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -674,11 +674,25 @@ label #checkbox:checked + .menu .hamburger:after
     position: relative;
 }
 
+.third-row div{
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #f3fcfc;
+    position: relative;
+}
+
 .second-row div:hover{
     background-color: white;
 }
 
 .first-row div:hover{
+    background-color: white;
+}
+
+.third-row div:hover{
     background-color: white;
 }
 
@@ -695,6 +709,15 @@ label #checkbox:checked + .menu .hamburger:after
     position: absolute;
     width: 20%;
     height: 50%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.third-row div img{
+    position: absolute;
+    width: 20%;
+    height: 40%;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -722,6 +745,15 @@ label #checkbox:checked + .menu .hamburger:after
     font-weight: lighter;
 }
 
-
+.third-row div h3{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: lighter;
+}
 
 /* skills section end */
