@@ -124,12 +124,13 @@ label .sendMessBtn:hover
     background-color: #f8fafa;
 }
 
-article
+.welcome-page
 {
     margin-top: 2%;
+    height: 80%;
 }
 
-article h1, h2
+.welcome-page h1, h2
 {
     font-family: "Gill Sans", sans-serif;
     font-size: 50px;
@@ -138,7 +139,7 @@ article h1, h2
     font-weight: 800;
 }
 
-article h1 span{
+.welcome-page h1 span{
     color: rgb(196, 59, 116);
 }
 
@@ -148,6 +149,42 @@ article h1 span{
     color: rgb(196, 59, 116);
     font-weight: lighter;
 
+}
+
+/* social media accounts */
+.social-media-links{
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    margin-top: 20%;
+    justify-content: flex-start;
+}
+
+.social-media-links div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.social-media-links div a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media-links div a img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #codingAnim
@@ -590,13 +627,13 @@ label #checkbox:checked + .menu .hamburger:after
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 80%;
+    width: 95%;
     height: 70%;
     margin: auto;
 }
 
-.expertise-container #first-expertise, #second-expertise, #third-expertise{
-    width: 400px;
+.expertise-container #first-expertise, #second-expertise, #third-expertise, #fourth-expertise{
+    width: 350px;
     height: 500px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
     display: flex;
@@ -611,15 +648,18 @@ label #checkbox:checked + .menu .hamburger:after
     line-height: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow: hidden;
+    text-align: center;
+    padding: 10px;
 }
 
-.expertise-container i{
-    margin-top: 5%;
+.expertise-container img{
+    margin-top: 3%;
     position: absolute;
+    width: 48px;
 }
-.expertise-container i #css{
+/* .expertise-container i #css{
     left: -10%;
-}
+} */
 
 /* services section end */
 
@@ -757,3 +797,59 @@ label #checkbox:checked + .menu .hamburger:after
 }
 
 /* skills section end */
+
+/* projects section */
+
+    .projects-section{
+        height: 90vh;
+        width: 100vw;
+        margin-top: 3%;
+        background-color: #f8fafa;
+    }
+
+    .projects-section #projects-header{
+        font-size: 50px;
+        text-align: center;
+        padding-top: 60px;
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        font-family: "Gill Sans", sans-serif;
+        color: rgb(89, 89, 182);
+        padding-bottom: 50px;
+    }
+
+    .projects-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 95%;
+        height: 70%;
+        margin: auto;
+    }
+    
+    .projects-container #first-project, #second-project, #third-project{
+        width: 350px;
+        height: 500px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .projects-container p{
+        margin:auto;
+        position: relative;
+        line-height: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .projects-container img{
+        margin-top: 3%;
+        position: absolute;
+        width: 48px;
+    }
+/* projects section end */
