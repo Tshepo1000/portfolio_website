@@ -493,52 +493,6 @@ label #checkbox:checked + .menu .hamburger:after
   body{width: 100vw;}
 } 
 
-@media only screen and (max-width: 768px)
-{
-    body{
-        overflow-x: hidden;
-    }
-    .homeSection{
-    
-    }
-
-    .homeSection .homeDiv{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .homeSection .homeDiv article{
-        position: absolute;
-        top: 95%;
-    }
-
-    article h1, h2
-    {
-        font-size: 30px;
-        line-height: 3.5rem;
-        text-align: center;
-    }
-
-    #text
-    {
-        font-size: 20px;
-    }
-
-    #codingAnim
-    {
-        height: 300px;
-        width: 300px;
-        margin-top: -5%;
-    }
-
-    #hire_me, #projects
-    {
-        letter-spacing: 1px;
-        width: 100px;
-        margin-left: 10%;
-    }
-}
-
 /*about section*/
 .aboutSection{
     height: 100vh;
@@ -853,3 +807,281 @@ label #checkbox:checked + .menu .hamburger:after
         width: 48px;
     }
 /* projects section end */
+
+/* responsiveness */
+@media screen and (max-width: 400px){
+
+    /* home section */
+    .homeSection
+    {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .homeSection .homeDiv
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .welcome-page
+    {
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #codingAnim
+    {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 250px;
+        
+    }
+
+    .welcome-page h1, h2
+    {
+        font-size: 20px;
+        line-height: 3rem;
+        font-weight: 600;
+    }
+
+    #text
+    {
+        font-size: 16px;
+        font-weight: lighter;
+
+    }
+
+    #hire_me, #projects
+    {
+        height: 30px;
+        width: 80px;
+        border-radius: 5px;
+        cursor: pointer;
+        letter-spacing: 2px;
+    }
+
+    .social-media-links{
+        width: 55vw;
+        justify-content: space-evenly;
+        /* border: 2px solid black; */
+    }
+    
+    .social-media-links div{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: relative;
+        margin-right: 15px;
+    }
+
+    /* home section end */
+
+    /* about me section starts */
+    .aboutSection #aboutMeHeader{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .aboutSection #myName{
+        font-size: 15px;
+    }
+    .aboutDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #imageDiv{
+        padding-top: 2px;
+        width: 70%;
+        height: 35%;
+        overflow: hidden;
+    }
+    
+    #imageDiv img{
+        border-radius: 10px;
+    }
+
+    #aboutMe{
+        width: 90%;
+        height: 45%;
+        overflow: scroll;
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+
+    #aboutMe p{
+        font-size: 13px;
+    }
+    
+    #myText{
+        font-size: small;
+        color: #3f808d;
+    }
+
+    /* about me section end */
+
+    /* expertise section starts */
+
+    .services{
+        width: 100vw;
+        height: auto;
+    }
+    
+    .services #myExpertise{
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .expertise-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .expertise-container #first-expertise, #second-expertise, #third-expertise, #fourth-expertise{
+        width: 70%;
+        height: 400px;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+    
+    .expertise-container p{
+        position: relative;
+        line-height: 18px;
+        text-align: center;
+        padding: 10px;
+        font-size: small;
+    }
+
+    .expertise-container img{
+        margin-top: 5%;
+        position: absolute;
+        width: 30px;
+    }
+
+    /* expertise section end */
+
+    /* skills section starts */
+    .skills-section{
+        height: auto;
+        width: 100vw;
+    }
+    
+    #skills-header{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .skills-container{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-row, .second-row, .third-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+    }
+    
+    .first-row div{
+        width: 200px;
+        height: 130px;
+        margin-bottom: 10%;
+    }
+    
+    .second-row div{
+        width: 200px;
+        height: 130px;
+        margin-bottom: 10%;
+    }
+    
+    .third-row div{
+        width: 200px;
+        height: 130px;
+        margin-bottom: 10%;
+    }
+
+    .first-row div h3{
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .second-row div h3{
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .third-row div h3{
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    /* skills section end */
+
+    /* projects section starts */
+    .projects-section{
+        height: auto;
+        width: 100vw;
+    }
+
+    .projects-section #projects-header{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .projects-container #first-project, #second-project, #third-project{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 400px;
+        margin-bottom: 5%;
+    }
+
+    .projects-container p{
+        line-height: 18px;
+        padding: 10px;
+    }
+    
+    .projects-container img{
+        margin-top: 3%;
+        position: absolute;
+        width: 48px;
+    }
+/* projects section end */
+}
+
+@media (min-width: 400px) and (max-width: 600px){
+
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
