@@ -39,7 +39,7 @@
                     <h1>I'm Tshepo <span>Sekete</span>,</h1>
                     <h2 style="font-weight: bold;">A <span id="text"></span></h2>
                     <button id="hire_me"><a href="https://drive.google.com/file/d/1EwjJsbHDz4NTrwIYISwd6z53wbRwTgEc/view?usp=sharing">Resume</a></button>
-                    <button id="projects">Projects</button>
+                    <button id="projects" onclick="showDiv()">Hire Me</button>
 
                     <br>
                     <div class="social-media-links">
@@ -247,12 +247,14 @@
             <form>
                 <span id="closeDiv" onclick="hideDiv()">&times;</span>
                 <h1>Contact Me</h1>
-                <input type="text" id="fname" name="fname" placeholder="Fullname" size="40" onmouseenter="focusEvents()"><br>
-                <input type="email" id="email" name="email" placeholder="Email" size="40"><br>
-                <input type="text" id="subject" name="subject" placeholder="Subject" size="40">
-                <textarea rows="1" cols="34" name="message" id="message" placeholder="Message"></textarea>
-                <button id="send-message">Send</button>
-                <button id="clear-message">Clear</button>
+                <input type="text" id="fname" name="fname" placeholder="Fullname" onmouseenter="focusEvents()"><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <div id="buttons-div">
+                    <button id="send-message">Send</button>
+                    <button id="clear-message">Clear</button>
+                </div>
             </form>
         </div>
     </body>
